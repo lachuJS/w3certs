@@ -1,0 +1,282 @@
+{
+  "contract_name": "W3Certs",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "certificateAuthority",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_regNo",
+          "type": "bytes32"
+        },
+        {
+          "name": "_name",
+          "type": "bytes32"
+        },
+        {
+          "name": "_percentile",
+          "type": "uint256"
+        }
+      ],
+      "name": "issue",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_regNo",
+          "type": "bytes32"
+        },
+        {
+          "name": "_name",
+          "type": "bytes32"
+        },
+        {
+          "name": "_percentile",
+          "type": "uint256"
+        }
+      ],
+      "name": "verify",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "certificateAuthorityName",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_certificateAuthorityName",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "key",
+          "type": "bytes32"
+        }
+      ],
+      "name": "Issued",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000c57fe5b604051610424380380610424833981016040528051015b60008054600160a060020a03191633600160a060020a03161790558051610051906001906020840190610059565b505b506100f9565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061009a57805160ff19168380011785556100c7565b828001600101855582156100c7579182015b828111156100c75782518255916020019190600101906100ac565b5b506100d49291506100d8565b5090565b6100f691905b808211156100d457600081556001016100de565b5090565b90565b61031c806101086000396000f300606060405263ffffffff60e060020a6000350416630fbe24618114610042578063dadc22051461006e578063dc079b3814610089578063e68d6024146100b6575bfe5b341561004a57fe5b610052610146565b60408051600160a060020a039092168252519081900360200190f35b341561007657fe5b610087600435602435604435610155565b005b341561009157fe5b6100a260043560243560443561020e565b604080519115158252519081900360200190f35b34156100be57fe5b6100c6610263565b60408051602080825283518183015283519192839290830191850190808383821561010c575b80518252602083111561010c57601f1990920191602091820191016100ec565b505050905090810190601f1680156101385780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b600054600160a060020a031681565b6000805433600160a060020a039081169116146101725760006000fd5b604080518581528151602091819003820190206000908152600290915220541561019c5760006000fd5b50604080518481528151908190036020908101822086835282820186905282840185905283519283900360600183206000828152600284528590205580835292517f757c099190e1c90990ba4911f13e6e6cfbcae49a04fcd75e936110b749f10abe9281900390910190a15b50505050565b60408051848152602080820185905281830184905282519182900360600182208683528351928390038201909220600090815260029091529182205414156102585750600161025c565b5060005b9392505050565b60018054604080516020600284861615610100026000190190941693909304601f810184900484028201840190925281815292918301828280156102e85780601f106102bd576101008083540402835291602001916102e8565b820191906000526020600020905b8154815290600101906020018083116102cb57829003601f168201915b5050505050815600a165627a7a72305820da4f50ce1c062beb57cfe13bcca4a3f1ba8d37a736e77039d0b448644f91f7200029",
+  "networks": {
+    "1496723262563": {
+      "events": {},
+      "links": {},
+      "address": "0x38c37399305f733dd344b847ba07ecf55c4ce4ac",
+      "updated_at": 1496723538610
+    },
+    "1496724206866": {
+      "events": {
+        "0x757c099190e1c90990ba4911f13e6e6cfbcae49a04fcd75e936110b749f10abe": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "key",
+              "type": "bytes32"
+            }
+          ],
+          "name": "Issued",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xeb6bd446e4ebd4110737285ee83f61db57ae21d0",
+      "updated_at": 1496724881601
+    },
+    "1496731506195": {
+      "events": {
+        "0x757c099190e1c90990ba4911f13e6e6cfbcae49a04fcd75e936110b749f10abe": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "key",
+              "type": "bytes32"
+            }
+          ],
+          "name": "Issued",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x90a56d72ce1072c4c4681656922332fe4ea2ccd6",
+      "updated_at": 1496731517345
+    },
+    "1496843107026": {
+      "events": {
+        "0x757c099190e1c90990ba4911f13e6e6cfbcae49a04fcd75e936110b749f10abe": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "key",
+              "type": "bytes32"
+            }
+          ],
+          "name": "Issued",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x8e5f93f76791bdbbb3d2ffa0936cd2ac12c8df35",
+      "updated_at": 1496843113661
+    },
+    "1496850967497": {
+      "events": {
+        "0x757c099190e1c90990ba4911f13e6e6cfbcae49a04fcd75e936110b749f10abe": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "key",
+              "type": "bytes32"
+            }
+          ],
+          "name": "Issued",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xbb13a7c4c94ef691d0044826c64fcfe17311f390",
+      "updated_at": 1496851081380
+    },
+    "1496851227625": {
+      "events": {
+        "0x757c099190e1c90990ba4911f13e6e6cfbcae49a04fcd75e936110b749f10abe": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "key",
+              "type": "bytes32"
+            }
+          ],
+          "name": "Issued",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x0ab13c78086e1a068b40f6d3e06b10cd2cc1c725",
+      "updated_at": 1496851250202
+    },
+    "1496852192348": {
+      "events": {
+        "0x757c099190e1c90990ba4911f13e6e6cfbcae49a04fcd75e936110b749f10abe": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "key",
+              "type": "bytes32"
+            }
+          ],
+          "name": "Issued",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xe11f695a4c6d2727c839fc2f7e69c5eafbd3ef56",
+      "updated_at": 1496852236055
+    },
+    "1497332450351": {
+      "events": {
+        "0x757c099190e1c90990ba4911f13e6e6cfbcae49a04fcd75e936110b749f10abe": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "key",
+              "type": "bytes32"
+            }
+          ],
+          "name": "Issued",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xb326a195bd7e6f0ce432a095aab49854ab8b1c14",
+      "updated_at": 1497332468732
+    },
+    "1497332866692": {
+      "events": {
+        "0x757c099190e1c90990ba4911f13e6e6cfbcae49a04fcd75e936110b749f10abe": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "key",
+              "type": "bytes32"
+            }
+          ],
+          "name": "Issued",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xab1e9092d96a81cb0999a0018117e4fffc58f649",
+      "updated_at": 1497332875033
+    },
+    "1497627168588": {
+      "events": {
+        "0x757c099190e1c90990ba4911f13e6e6cfbcae49a04fcd75e936110b749f10abe": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "key",
+              "type": "bytes32"
+            }
+          ],
+          "name": "Issued",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xc17de073ca51b8b94b38f85bcf4bcb9c4c79764c",
+      "updated_at": 1497627209307
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1497627209307
+}

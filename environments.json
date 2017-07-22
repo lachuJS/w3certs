@@ -1,0 +1,10 @@
+{
+    "development" : {
+        "mysql" : {
+            "host" : "localhost",
+            "user" : "root",
+            "password" : "toor",
+            "database" : "w3certs"
+        }
+    }
+}
